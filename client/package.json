@@ -1,0 +1,26 @@
+{
+  "name": "udp-socket-flatbuffers-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node dist/index.js"
+  },
+  "keywords": [
+    "udp",
+    "nodejs",
+    "node",
+    "node.js",
+    "flatbuffers"
+  ],
+  "author": "mikaws - Michael Dias",
+  "license": "MIT",
+  "dependencies": {
+    "flatbuffers": "^23.3.3",
+    "log4js": "^6.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+version: "3"
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: client-udp
+    depends_on:
+      - server
+    ports:
+      - "12345:12345/udp"
+    networks:
+      - udp-network
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: server-udp
+    ports:
+      - "41234:41234/udp"
+    networks:
+      - udp-network
+
+networks:
+  udp-network:
+    driver: bridge

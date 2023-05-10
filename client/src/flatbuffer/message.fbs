@@ -1,0 +1,5 @@
+namespace ClientSpace;
+
+table Message {
+  content: string;
+}

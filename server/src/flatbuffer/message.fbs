@@ -1,0 +1,5 @@
+namespace ServerSpace;
+
+table Message {
+  content: string;
+}
